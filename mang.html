@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=let, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <label id="so-lon-nhat" for="max">
+
+    </label>
+    <script>
+        let datasoure = [10, 50, 3]
+        timVaHienThiSoLonNhatCuaDatasoure()
+
+        function timVaHienThiSoLonNhatCuaDatasoure() {
+            let max = datasoure[0]
+            for (let j = 1; j < datasoure.length; j++) {
+                if (datasoure[j] > max) {
+                    max = datasoure[j]
+                }
+                hienThiSoLonNhat()
+            }
+            function hienThiSoLonNhat() {
+                document.getElementById("so-lon-nhat").innerText = max
+            }
+        }
+
+
+
+    </script>
+</body>
+
+
+</html>
